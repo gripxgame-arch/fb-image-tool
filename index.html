@@ -242,82 +242,83 @@ body {
 <div class="container">
 
   <!-- Step 1: Choose Template -->
-  <div class="section-title">绗竴姝?路 閫夋嫨妯℃澘</div>
+  <div class="section-title">第一步 · 选择模板</div>
   <div class="templates" id="templateGrid">
     <div class="tpl-card" data-tpl="product" onclick="selectTemplate('product')">
-      <div class="tpl-icon">馃摝</div>
-      <div class="tpl-name">浜у搧灞曠ず</div>
-      <div class="tpl-desc">绐佸嚭浜у搧鍗栫偣锛屽惛寮曠溂鐞?/div>
+      <div class="tpl-icon">📦</div>
+      <div class="tpl-name">产品展示</div>
+      <div class="tpl-desc">突出产品卖点，吸引眼球</div>
     </div>
     <div class="tpl-card" data-tpl="promo" onclick="selectTemplate('promo')">
-      <div class="tpl-icon">馃敟</div>
-      <div class="tpl-name">淇冮攢娲诲姩</div>
-      <div class="tpl-desc">鎶樻墸銆侀檺鏃朵紭鎯犮€佹竻浠?/div>
+      <div class="tpl-icon">🔥</div>
+      <div class="tpl-name">促销活动</div>
+      <div class="tpl-desc">折扣、限时优惠、清仓</div>
     </div>
     <div class="tpl-card" data-tpl="brand" onclick="selectTemplate('brand')">
-      <div class="tpl-icon">馃挕</div>
-      <div class="tpl-name">鍝佺墝鏁呬簨</div>
-      <div class="tpl-desc">浼犻€掑搧鐗岀悊蹇典笌浠峰€艰</div>
+      <div class="tpl-icon">💡</div>
+      <div class="tpl-name">品牌故事</div>
+      <div class="tpl-desc">传递品牌理念与价值观</div>
     </div>
     <div class="tpl-card" data-tpl="quiz" onclick="selectTemplate('quiz')">
-      <div class="tpl-icon">鉂?/div>
-      <div class="tpl-name">浜掑姩闂瓟</div>
-      <div class="tpl-desc">寮曞璇勮锛屾彁鍗囦簰鍔ㄧ巼</div>
+      <div class="tpl-icon">❓</div>
+      <div class="tpl-name">互动问答</div>
+      <div class="tpl-desc">引导评论，提升互动率</div>
     </div>
     <div class="tpl-card" data-tpl="holiday" onclick="selectTemplate('holiday')">
-      <div class="tpl-icon">馃帀</div>
-      <div class="tpl-name">鑺傛棩娲诲姩</div>
-      <div class="tpl-desc">鑺傛棩钀ラ攢銆佸懆骞村簡銆佷富棰樻椿鍔?/div>
+      <div class="tpl-icon">🎉</div>
+      <div class="tpl-name">节日活动</div>
+      <div class="tpl-desc">节日营销、周年庆、主题活动</div>
     </div>
   </div>
 
   <!-- Step 2: Fill in Details -->
   <div class="form-panel" id="formPanel">
-    <div class="section-title">绗簩姝?路 濉啓鍐呭</div>
+    <div class="section-title">第二步 · 填写内容</div>
     <div id="formContent"></div>
 
-    <div class="section-title" style="margin-top:24px">瑙嗚椋庢牸</div>
+    <div class="section-title" style="margin-top:24px">视觉风格</div>
     <div class="style-chips" id="styleChips">
-      <span class="chip active" data-style="modern minimal">鐜颁唬绠€绾?/span>
-      <span class="chip" data-style="vibrant colorful">椴滆壋澶氬僵</span>
-      <span class="chip" data-style="luxury elegant">楂樼浼橀泤</span>
-      <span class="chip" data-style="tech futuristic">绉戞妧鏈潵</span>
-      <span class="chip" data-style="warm cozy">娓╅Θ浜插垏</span>
-      <span class="chip" data-style="bold impactful">澶ц儐閱掔洰</span>
-      <span class="chip" data-style="clean corporate">鍟嗗姟涓撲笟</span>
-      <span class="chip" data-style="playful fun">娲绘臣瓒ｅ懗</span>
+      <span class="chip active" data-style="modern minimal">现代简约</span>
+      <span class="chip" data-style="vibrant colorful">鲜艳多彩</span>
+      <span class="chip" data-style="luxury elegant">高端优雅</span>
+      <span class="chip" data-style="tech futuristic">科技未来</span>
+      <span class="chip" data-style="warm cozy">温馨亲切</span>
+      <span class="chip" data-style="bold impactful">大胆醒目</span>
+      <span class="chip" data-style="clean corporate">商务专业</span>
+      <span class="chip" data-style="playful fun">活泼趣味</span>
     </div>
 
     <div class="form-group full" style="margin-top:18px">
-      <label>馃嚭馃嚫 琛ュ厖鎻忚堪锛堣嫳鏂囷紝鍙€?鈥?璁〢I鏇村ソ鍦扮悊瑙ｄ綘鐨勯渶姹傦級</label>
+      <label>🇺🇸 补充描述（英文，可选 — 让AI更好地理解你的需求）</label>
       <input type="text" id="extraPrompt" placeholder="e.g. blue and white color scheme, tropical theme, luxury gold accents...">
     </div>
 
     <div class="form-group full">
-      <label>馃摑 AI 鎻愮ず璇嶉瑙堬紙鑷姩鐢熸垚锛屽彲鎵嬪姩淇敼锛?/label>
-      <div class="prompt-preview" id="promptPreview" contenteditable="true">閫夋嫨妯℃澘骞跺～鍐欏唴瀹瑰悗锛岃繖閲屼細鑷姩鐢熸垚鎻愮ず璇?..</div>
+      <label>📝 AI 提示词预览（自动生成，可手动修改）</label>
+      <div class="prompt-preview" id="promptPreview" contenteditable="true">选择模板并填写内容后，这里会自动生成提示词...</div>
     </div>
 
     <button class="btn-generate" id="btnGenerate" onclick="generateImage()">
-      <span>鉁?/span> 鐢熸垚鍥剧墖
+      <span>✨</span> 生成图片
     </button>
   </div>
 
   <!-- Step 3: Result -->
   <div class="result-panel" id="resultPanel">
-    <div class="section-title">鐢熸垚缁撴灉</div>
+    <div class="section-title">生成结果</div>
     <div class="result-img-wrap">
       <img id="resultImage" src="" alt="Generated Image">
     </div>
     <div class="result-actions">
       <a class="btn-secondary" id="btnDownload" href="" download="fb-post.png">
-        猬囷笍 涓嬭浇鍥剧墖
+        ⬇️ 下载图片
       </a>
       <button class="btn-secondary" onclick="regenerate()">
-        馃攧 閲嶆柊鐢熸垚
+        🔄 重新生成
       </button>
       <button class="btn-secondary" onclick="resetAll()">
-        鉃?鏂板缓涓€寮?      </button>
+        ➕ 新建一张
+      </button>
     </div>
   </div>
 </div>
@@ -325,54 +326,54 @@ body {
 <!-- Loading Overlay -->
 <div class="loading-overlay" id="loadingOverlay">
   <div class="spinner"></div>
-  <div class="loading-text">AI 姝ｅ湪鐢熸垚鍥剧墖锛岄璁?10-30 绉?..</div>
+  <div class="loading-text">AI 正在生成图片，预计 10-30 秒...</div>
 </div>
 
 <script>
 // ============ Template Definitions ============
 const TEMPLATES = {
   product: {
-    name: '浜у搧灞曠ず',
+    name: '产品展示',
     fields: [
-      { id: 'productName', label: '浜у搧鍚嶇О', placeholder: 'e.g. Smart Watch Pro', type: 'text' },
-      { id: 'productFeature', label: '鏍稿績鍗栫偣', placeholder: 'e.g. 7-day battery life, GPS tracking', type: 'textarea' },
-      { id: 'targetAudience', label: '鐩爣鍙椾紬', placeholder: 'e.g. fitness enthusiasts, young professionals', type: 'text' }
+      { id: 'productName', label: '产品名称', placeholder: 'e.g. Smart Watch Pro', type: 'text' },
+      { id: 'productFeature', label: '核心卖点', placeholder: 'e.g. 7-day battery life, GPS tracking', type: 'textarea' },
+      { id: 'targetAudience', label: '目标受众', placeholder: 'e.g. fitness enthusiasts, young professionals', type: 'text' }
     ],
     buildPrompt: (d, style) => `A professional Facebook marketing banner image for showcasing "${d.productName}". Key features: ${d.productFeature}. Target audience: ${d.targetAudience}. Style: ${style}. High quality product photography feel, clean layout with space for text overlay. Facebook landscape format, eye-catching and scroll-stopping. ${d.extra}`
   },
   promo: {
-    name: '淇冮攢娲诲姩',
+    name: '促销活动',
     fields: [
-      { id: 'discount', label: '浼樻儬淇℃伅', placeholder: 'e.g. 50% OFF, Buy 1 Get 1 Free', type: 'text' },
-      { id: 'productName', label: '浜у搧/鍝佺墝鍚?, placeholder: 'e.g. Summer Collection 2026', type: 'text' },
-      { id: 'urgency', label: '绱ц揩鎰熸枃妗?, placeholder: 'e.g. Limited Time Only, Ends Sunday', type: 'text' }
+      { id: 'discount', label: '优惠信息', placeholder: 'e.g. 50% OFF, Buy 1 Get 1 Free', type: 'text' },
+      { id: 'productName', label: '产品/品牌名', placeholder: 'e.g. Summer Collection 2026', type: 'text' },
+      { id: 'urgency', label: '紧迫感文案', placeholder: 'e.g. Limited Time Only, Ends Sunday', type: 'text' }
     ],
     buildPrompt: (d, style) => `An attention-grabbing Facebook promotional banner. Big bold text "${d.discount}" for "${d.productName}". Urgency text: "${d.urgency}". Style: ${style}. Sale, discount marketing feel. Bold colors, dynamic composition, designed to drive clicks. Facebook landscape format. ${d.extra}`
   },
   brand: {
-    name: '鍝佺墝鏁呬簨',
+    name: '品牌故事',
     fields: [
-      { id: 'brandName', label: '鍝佺墝鍚嶇О', placeholder: 'e.g. EcoLife', type: 'text' },
-      { id: 'brandValue', label: '鍝佺墝鐞嗗康/浠峰€艰', placeholder: 'e.g. Sustainable living, quality first', type: 'textarea' },
-      { id: 'mood', label: '鎯宠浼犺揪鐨勬儏缁?, placeholder: 'e.g. trust, inspiration, warmth', type: 'text' }
+      { id: 'brandName', label: '品牌名称', placeholder: 'e.g. EcoLife', type: 'text' },
+      { id: 'brandValue', label: '品牌理念/价值观', placeholder: 'e.g. Sustainable living, quality first', type: 'textarea' },
+      { id: 'mood', label: '想要传达的情绪', placeholder: 'e.g. trust, inspiration, warmth', type: 'text' }
     ],
     buildPrompt: (d, style) => `A Facebook brand storytelling banner for "${d.brandName}". The brand stands for: ${d.brandValue}. Emotional tone: ${d.mood}. Style: ${style}. Cinematic and emotional, tells a visual story. Elegant composition, suitable for brand awareness post. Facebook landscape format. ${d.extra}`
   },
   quiz: {
-    name: '浜掑姩闂瓟',
+    name: '互动问答',
     fields: [
-      { id: 'question', label: '闂鍐呭', placeholder: 'e.g. Which color do you prefer?', type: 'text' },
-      { id: 'topic', label: '璇濋/涓婚', placeholder: 'e.g. new product colors, summer plans', type: 'text' },
-      { id: 'options', label: '閫夐」锛堥€楀彿鍒嗛殧锛?, placeholder: 'e.g. Red, Blue, Green, Black', type: 'text' }
+      { id: 'question', label: '问题内容', placeholder: 'e.g. Which color do you prefer?', type: 'text' },
+      { id: 'topic', label: '话题/主题', placeholder: 'e.g. new product colors, summer plans', type: 'text' },
+      { id: 'options', label: '选项（逗号分隔）', placeholder: 'e.g. Red, Blue, Green, Black', type: 'text' }
     ],
     buildPrompt: (d, style) => `An engaging Facebook interactive poll/quiz banner. Question: "${d.question}" about ${d.topic}. Visual options representation for: ${d.options}. Style: ${style}. Fun, inviting, encourages comments and engagement. Split layout showing choices. Facebook landscape format. ${d.extra}`
   },
   holiday: {
-    name: '鑺傛棩娲诲姩',
+    name: '节日活动',
     fields: [
-      { id: 'holiday', label: '鑺傛棩/娲诲姩鍚嶇О', placeholder: 'e.g. Christmas, Chinese New Year, Black Friday', type: 'text' },
-      { id: 'greeting', label: '绁濈/娲诲姩涓婚', placeholder: 'e.g. Merry Christmas & Happy New Year Sale', type: 'text' },
-      { id: 'specialOffer', label: '鐗瑰埆浼樻儬锛堝彲閫夛級', placeholder: 'e.g. Free shipping on all orders', type: 'text' }
+      { id: 'holiday', label: '节日/活动名称', placeholder: 'e.g. Christmas, Chinese New Year, Black Friday', type: 'text' },
+      { id: 'greeting', label: '祝福/活动主题', placeholder: 'e.g. Merry Christmas & Happy New Year Sale', type: 'text' },
+      { id: 'specialOffer', label: '特别优惠（可选）', placeholder: 'e.g. Free shipping on all orders', type: 'text' }
     ],
     buildPrompt: (d, style) => `A festive Facebook banner for "${d.holiday}". Main text: "${d.greeting}". Special offer: ${d.specialOffer || 'None'}. Style: ${style}. Festive, celebratory atmosphere with appropriate holiday elements. Joyful and shareable. Facebook landscape format. ${d.extra}`
   }
@@ -448,7 +449,7 @@ async function generateImage() {
 
   // Get prompt (may be manually edited)
   const prompt = document.getElementById('promptPreview').textContent.trim();
-  if (!prompt) return alert('璇峰～鍐欏唴瀹?);
+  if (!prompt) return alert('请填写内容');
 
   const btn = document.getElementById('btnGenerate');
   btn.disabled = true;
@@ -463,7 +464,7 @@ async function generateImage() {
     const data = await res.json();
 
     if (data.error) {
-      alert('鐢熸垚澶辫触: ' + (data.detail || data.error));
+      alert('生成失败: ' + (data.detail || data.error));
     } else if (data.imageUrl) {
       document.getElementById('resultImage').src = data.imageUrl;
       document.getElementById('btnDownload').href = data.imageUrl;
@@ -471,7 +472,7 @@ async function generateImage() {
       document.getElementById('resultPanel').scrollIntoView({ behavior: 'smooth' });
     }
   } catch (e) {
-    alert('缃戠粶閿欒: ' + e.message);
+    alert('网络错误: ' + e.message);
   } finally {
     btn.disabled = false;
     document.getElementById('loadingOverlay').classList.remove('visible');
